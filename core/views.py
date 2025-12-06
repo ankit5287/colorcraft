@@ -1,3 +1,5 @@
+from django.core.mail import send_mail
+from django.conf import settings
 from django.shortcuts import render
 from .models import Contact
 
@@ -20,6 +22,33 @@ def contact_view(request):
             message=message
         )
         contact.save()
+
+        # Send Email Notification
+        subject = f"New Contact Request from {name}"
+        email_message = f"""
+        New contact request received:
+
+        Name: {name}
+        Phone: {phone}
+        Email: {email}
+        Preferred Time: {preferred_time}
+        Project Type: {project_type}
+        Message: {message}
+        """
+        
+        recipient_list = ['ankitnandoliya32@gmail.com', 'colourcraft@gmail.com']
+        
+        try:
+            send_mail(
+                subject,
+                email_message,
+                settings.DEFAULT_FROM_EMAIL,
+                recipient_list,
+                fail_silently=False,
+            )
+        except Exception as e:
+            print(f"Error sending email: {e}")
+
         success = True
 
     return render(request, 'core/index.html', {'success': success})
