@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <center>
+            <section class="section fade-in" id="contact">
+                <div class="container">
+                    <h2 class="contact__heading animate-text">Contact Us</h2>
+                    <p class="contact__subtext">Leave your details and our team will call you back within 24 hours.</p>
+
+                    <form class="contact__form form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone *</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email (optional)</label>
+                            <input type="email" id="email" name="email" class="form-input">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferred-time" class="form-label">Preferred time to call</label>
+                            <select id="preferred-time" name="preferred-time" class="form-select">
+                                <option value="">Select a time</option>
+                                <option value="morning">Morning (9am - 12pm)</option>
+                                <option value="afternoon">Afternoon (12pm - 5pm)</option>
+                                <option value="evening">Evening (5pm - 8pm)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="project-type" class="form-label">Project type</label>
+                            <select id="project-type" name="project-type" class="form-select">
+                                <option value="">Select project type</option>
+                                <option value="exterior">Exterior painting</option>
+                                <option value="interior">Interior painting</option>
+                                <option value="both">Both interior & exterior</option>
+                                <option value="commercial">Commercial project</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message (optional)</label>
+                            <textarea id="message" name="message" class="form-textarea"
+                                placeholder="Tell us about your project, timeline, or any specific requirements..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary">Request call-back</button>
+
+                        <p class="privacy-note">We only use your contact information to discuss your painting project.
+                            Your
+                            privacy is important to us.</p>
+                    </form>
+
+                    <div class="success-message" id="success-message">
+                        <strong>Thanks — our team will call you!</strong>
+                        <br>We'll be in touch within 24 hours to discuss your project.
+                    </div>
+                </div>
+            </section>
+        </center>
+    </main>
+</body>
+
+</html>

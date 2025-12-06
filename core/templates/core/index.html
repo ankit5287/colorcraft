@@ -1,0 +1,639 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional House Painting Services | ColorCraft</title>
+    <meta name="description" content="Fast, reliable house painting services — schedule a free callback.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'core/style.css' %}">
+
+</head>
+
+<body>
+    <div class="parallax-bg"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__content">
+                <a href="#" class="logo animate-text">ColorCraft</a>
+                <div class="header__right">
+                    <nav class="nav" role="navigation">
+                        <a href="#about" class="nav__link">About</a>
+                        <a href="#projects" class="nav__link">Projects</a>
+                        <a href="#feedback" class="nav__link">Feedback</a>
+                        <a href="#services" class="nav__link">Services</a>
+                        <a href="#process" class="nav__link">Process</a>
+                        <a href="#faq" class="nav__link">FAQ</a>
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </nav>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+                </div>
+            </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section fade-in">
+            <div class="container">
+                <div class="grid grid--2-cols">
+                    <div class="hero__content slide-in-left">
+                        <h1 class="hero__title animate-text">Give your home a fresh new look</h1>
+                        <p class="hero__subtitle">Professional house painting — modern finishes, durable results</p>
+                        <div class="hero__cta">
+                            <a href="#contact" class="btn btn--primary" id="hero-cta">Get a free call-back</a>
+                            <span class="hero__cta-note">Our team will call you</span>
+                        </div>
+                    </div>
+                    <div class="hero__image slide-in-right">
+                        <img src="{% static 'core/img/Hero.png' %}" alt="House painting illustration" srcset="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section fade-in" id="about">
+            <div class="container">
+                <div class="about__content">
+                    <h2 class="about__title animate-text">About ColorCraft</h2>
+                    <p class="about__text">
+                        With over 15 years of experience in the painting industry, ColorCraft has transformed thousands
+                        of homes across the region. We combine traditional craftsmanship with modern techniques and
+                        premium materials to deliver exceptional results that stand the test of time.
+                    </p>
+                    <p class="about__text">
+                        Our team of certified painters takes pride in every project, whether it's a single room refresh
+                        or a complete home makeover. We believe that great painting is about more than just color – it's
+                        about creating spaces that reflect your personality and enhance your quality of life.
+                    </p>
+
+                    <div class="stats fade-in">
+                        <div class="stat">
+                            <span class="stat__number" data-count="2500">0</span>
+                            <span class="stat__label">Homes Painted</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number" data-count="15">0</span>
+                            <span class="stat__label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number" data-count="98">0</span>
+                            <span class="stat__label">% Satisfaction</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number" data-count="24">0</span>
+                            <span class="stat__label">Hour Response</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-choose section fade-in">
+            <div class="container">
+                <h2 class="why-choose__title animate-text">Why Choose ColorCraft?</h2>
+                <div class="grid grid--4-cols">
+                    <div class="feature card slide-in-left">
+                        <div class="feature__icon">🎨</div>
+                        <h3 class="card__title">Expert Color Consultation</h3>
+                        <p class="card__desc">Our color experts help you choose the perfect palette that complements
+                            your home's architecture and your personal style.</p>
+                    </div>
+                    <div class="feature card fade-in">
+                        <div class="feature__icon">🛡️</div>
+                        <h3 class="card__title">Premium Quality Materials</h3>
+                        <p class="card__desc">We use only the highest quality paints and materials from trusted brands,
+                            ensuring durability and beautiful finishes.</p>
+                    </div>
+                    <div class="feature card fade-in">
+                        <div class="feature__icon">⚡</div>
+                        <h3 class="card__title">Fast & Efficient Service</h3>
+                        <p class="card__desc">Our experienced team works efficiently to complete your project on time
+                            without compromising on quality.</p>
+                    </div>
+                    <div class="feature card slide-in-right">
+                        <div class="feature__icon">✅</div>
+                        <h3 class="card__title">100% Satisfaction Guarantee</h3>
+                        <p class="card__desc">We stand behind our work with a comprehensive satisfaction guarantee and
+                            warranty on all our services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Steps Section -->
+        <section class="section fade-in" id="process">
+            <div class="container">
+                <h2 class="steps__heading animate-text">Paint your house in three easy steps</h2>
+                <div class="grid grid--3-cols">
+                    <div class="step card slide-in-left">
+                        <div class="step__icon">1</div>
+                        <h3 class="card__title">Book a free survey</h3>
+                        <p class="card__desc">Tell us about your house and schedule a convenient time for our expert
+                            assessment.</p>
+                    </div>
+                    <div class="step card fade-in">
+                        <div class="step__icon">2</div>
+                        <h3 class="card__title">Choose color & plan</h3>
+                        <p class="card__desc">We suggest modern palettes and detailed timelines after thorough
+                            inspection of your property.</p>
+                    </div>
+                    <div class="step card slide-in-right">
+                        <div class="step__icon">3</div>
+                        <h3 class="card__title">We paint & finish</h3>
+                        <p class="card__desc">Fast, clean work with professional techniques and a final quality check
+                            for perfect results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Projects Section -->
+        <section class="projects section fade-in" id="projects">
+            <div class="container">
+                <h2 class="projects__title animate-text">Our Recent Projects</h2>
+                <div class="projects__grid">
+
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <img src="{% static 'core/img/first.jpeg' %}" alt="Modern House Painting"
+                            class="project-card__image">
+                        <h3 class="project-card__title">Modern House Painting</h3>
+                        <p class="project-card__desc">Fresh exterior look with smooth finish and vibrant colors.</p>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <img src="{% static 'core/img/second.jpg' %}" alt="Elegant Interior Design"
+                            class="project-card__image">
+                        <h3 class="project-card__title">Elegant Interior Design</h3>
+                        <p class="project-card__desc">Luxurious living room and dining area with premium finishes
+                            and accent walls.</p>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <img src="{% static 'core/img/forth.jpg' %}" alt="Commercial Office Space"
+                            class="project-card__image">
+                        <h3 class="project-card__title">Commercial Office Space</h3>
+                        <p class="project-card__desc">Professional office renovation with modern corporate colors
+                            and durable finishes.</p>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <img src="{% static 'core/img/third.jpg' %}" alt="Victorian Home Restoration"
+                            class="project-card__image">
+                        <h3 class="project-card__title">Victorian Home Restoration</h3>
+                        <p class="project-card__desc">Historic home restoration preserving original charm with
+                            modern paint technology.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section fade-in" id="faq">
+            <div class="container">
+                <h2 class="faq__title animate-text">Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How long does a typical house painting project take?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Most residential painting projects take 3-7 days depending on the size of your home,
+                                weather conditions, and scope of work. We'll provide a detailed timeline during your
+                                free consultation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do you provide free color consultation?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! Our expert color consultants will work with you to choose the perfect colors that
+                                complement your home's style and your personal preferences. This service is included
+                                with every painting project.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What type of paint do you use?
+                        </button>
+                        <div class="faq-answer">
+                            <p>We use premium quality paints from trusted brands like Sherwin-Williams, Benjamin Moore,
+                                and Behr. All paints are eco-friendly with low VOC content and come with manufacturer
+                                warranties.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do you offer any warranties on your work?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! We provide a comprehensive 5-year warranty on exterior painting and 3-year
+                                warranty on interior work. This covers both materials and workmanship for your peace of
+                                mind.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How do you protect furniture and landscaping?
+                        </button>
+                        <div class="faq-answer">
+                            <p>We take great care to protect your property. All furniture is covered or moved, floors
+                                are protected with drop cloths, and landscaping is carefully covered. We clean up
+                                thoroughly after each day's work.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Can you paint during winter months?
+                        </button>
+                        <div class="faq-answer">
+                            <p>Interior painting can be done year-round. For exterior painting, we work when
+                                temperatures are above 50°F and there's no precipitation in the forecast. We'll advise
+                                on the best timing for your project.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section fade-in" id="contact">
+            <div class="container">
+                <h2 class="contact__heading animate-text">Contact Us</h2>
+                <p class="contact__subtext">Leave your details and our team will call you back within 24 hours.</p>
+
+                {% if not success %}
+                <form method="post" action="{% url 'contact' %}" class="contact__form form" id="contact-form">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name *</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone *</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email (optional)</label>
+                        <input type="email" id="email" name="email" class="form-input">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferred-time" class="form-label">Preferred time to call</label>
+                        <select id="preferred-time" name="preferred-time" class="form-select">
+                            <option value="">Select a time</option>
+                            <option value="morning">Morning (9am - 12pm)</option>
+                            <option value="afternoon">Afternoon (12pm - 5pm)</option>
+                            <option value="evening">Evening (5pm - 8pm)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-type" class="form-label">Project type</label>
+                        <select id="project-type" name="project-type" class="form-select">
+                            <option value="">Select project type</option>
+                            <option value="exterior">Exterior painting</option>
+                            <option value="interior">Interior painting</option>
+                            <option value="both">Both interior & exterior</option>
+                            <option value="commercial">Commercial project</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message (optional)</label>
+                        <textarea id="message" name="message" class="form-textarea"
+                            placeholder="Tell us about your project, timeline, or any specific requirements..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn--primary">Request call-back</button>
+
+                    <p class="privacy-note">We only use your contact information to discuss your painting project. Your
+                        privacy is important to us.</p>
+                </form>
+                {% endif %}
+
+                {% if success %}
+                <div class="success-message show" id="success-message">
+                    <strong>Thanks — our team will call you!</strong>
+                    <br>We'll be in touch within 24 hours to discuss your project.
+                </div>
+                {% endif %}
+            </div>
+        </section>
+
+        <!-- Feedback Section -->
+        <section class="feedback section fade-in" id="feedback">
+            <div class="container">
+                <h2 class="feedback__title animate-text">Share Your Experience</h2>
+                <p class="feedback__subtitle">We'd love to hear about your experience with ColorCraft. Your feedback
+                    helps us improve and helps other customers make informed decisions.</p>
+
+                <div class="feedback__container">
+                    <form class="feedback__form" id="feedback-form">
+                        <h3 class="feedback__form-title">Tell Us About Your Experience</h3>
+
+                        <div class="feedback__form-grid">
+                            <div class="feedback__form-group feedback__form-group--full">
+                                <label for="feedback-name" class="feedback__form-label">Your Name *</label>
+                                <input type="text" id="feedback-name" name="name" class="feedback__form-input" required>
+                            </div>
+
+                            <div class="feedback__form-group feedback__form-group--full">
+                                <label for="feedback-description" class="feedback__form-label">Your Experience *</label>
+                                <textarea id="feedback-description" name="description" class="feedback__form-textarea"
+                                    placeholder="Tell us about your experience with ColorCraft. What did you like most? How was our service? Any suggestions for improvement?"
+                                    required></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="feedback__submit-btn">
+                            Submit Feedback
+                        </button>
+                    </form>
+
+                    <div class="feedback__success-message" id="feedback-success">
+                        <div class="feedback__success-title">Thank You for Your Feedback! 🎉</div>
+                        <div class="feedback__success-text">
+                            Your review has been submitted successfully. We truly appreciate you taking the time to
+                            share your experience with ColorCraft.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2025 ColorCraft — Professional house painting services</p>
+                <ul class="footer__links">
+                    <li><a href="#" class="footer__link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer__link">Terms of Service</a></li>
+                    <li><a href="#" class="footer__link">FAQ</a></li>
+                    <li><a href="#" class="footer__link">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme Toggle Functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Check for saved theme preference or default to light
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        body.setAttribute('data-theme', currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Parallax Background Effect
+        let ticking = false;
+
+        function updateParallax() {
+            const scrolled = window.pageYOffset;
+            const parallaxBg = document.querySelector('.parallax-bg');
+            const speed = scrolled * 0.3;
+
+            parallaxBg.style.setProperty('--scroll-offset', `${speed}px`);
+            ticking = false;
+        }
+
+        function requestTick() {
+            if (!ticking) {
+                requestAnimationFrame(updateParallax);
+                ticking = true;
+            }
+        }
+
+        window.addEventListener('scroll', requestTick);
+
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('header--scrolled');
+            } else {
+                header.classList.remove('header--scrolled');
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Enhanced Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // Add staggered delay for multiple elements
+                    setTimeout(() => {
+                        entry.target.classList.add('is-visible');
+                    }, index * 100);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Counter Animation for Stats
+        function animateCounters() {
+            const counters = document.querySelectorAll('[data-count]');
+
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-count'));
+                const increment = target / 100;
+                let current = 0;
+
+                const updateCounter = () => {
+                    if (current < target) {
+                        current += increment;
+                        counter.textContent = Math.floor(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+
+                updateCounter();
+            });
+        }
+
+        // Trigger counter animation when stats section is visible
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        });
+
+        const statsSection = document.querySelector('.stats');
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+
+        // FAQ Accordion Functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isOpen = answer.classList.contains('active');
+
+                // Close all other answers
+                document.querySelectorAll('.faq-answer.active').forEach(openAnswer => {
+                    openAnswer.classList.remove('active');
+                    openAnswer.previousElementSibling.classList.remove('active');
+                });
+
+                // Toggle current answer
+                if (!isOpen) {
+                    answer.classList.add('active');
+                    question.classList.add('active');
+                }
+            });
+        });
+
+        // Enhanced Form submission handling
+        // Form submission handled by Django backend
+
+        // Notification system
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `notification notification--${type}`;
+            notification.innerHTML = `
+                <div class="notification__content">
+                    <span class="notification__icon">${type === 'error' ? '⚠️' : 'ℹ️'}</span>
+                    <span class="notification__text">${message}</span>
+                </div>
+            `;
+
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: ${type === 'error' ? '#ef4444' : 'var(--accent)'};
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: var(--border-radius);
+                box-shadow: var(--shadow-lg);
+                z-index: 1000;
+                transform: translateX(100%);
+                transition: all 0.3s ease;
+            `;
+
+            document.body.appendChild(notification);
+
+            // Slide in
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+
+            // Slide out and remove
+            setTimeout(() => {
+                notification.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 4000);
+        }
+
+        // Enhanced keyboard navigation
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Tab') {
+                document.body.classList.add('using-keyboard');
+            }
+
+            // Close FAQ with Escape key
+            if (e.key === 'Escape') {
+                document.querySelectorAll('.faq-answer.active').forEach(answer => {
+                    answer.classList.remove('active');
+                    answer.previousElementSibling.classList.remove('active');
+                });
+            }
+        });
+
+        document.addEventListener('mousedown', function () {
+            document.body.classList.remove('using-keyboard');
+        });
+
+        // Page loading animation
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+
+        // Add smooth text animation trigger
+        const textAnimationObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        });
+
+        document.querySelectorAll('.animate-text').forEach(el => {
+            el.style.animationPlayState = 'paused';
+            textAnimationObserver.observe(el);
+        });
+    </script>
+</body>
+
+</html>
