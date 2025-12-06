@@ -13,15 +13,15 @@ def contact_view(request):
         project_type = request.POST.get('project-type')      # Note the hyphen from HTML name
         message = request.POST.get('message')
 
-        contact = Contact(
-            name=name,
-            phone=phone,
-            email=email,
-            preferred_time=preferred_time,
-            project_type=project_type,
-            message=message
-        )
-        contact.save()
+        # contact = Contact(
+        #     name=name,
+        #     phone=phone,
+        #     email=email,
+        #     preferred_time=preferred_time,
+        #     project_type=project_type,
+        #     message=message
+        # )
+        # contact.save()
 
         # Send Email Notification
         subject = f"New Contact Request from {name}"
