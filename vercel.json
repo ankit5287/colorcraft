@@ -3,7 +3,7 @@
     "rewrites": [
         {
             "source": "/(.*)",
-            "destination": "/colorcraft_project/wsgi.py"
+            "destination": "/api/index.py"
         }
     ]
 }
