@@ -631,6 +631,12 @@
             el.style.animationPlayState = 'paused';
             textAnimationObserver.observe(el);
         });
+
+        // Auto-scroll to success message if present
+        const successMessage = document.getElementById('success-message');
+        if (successMessage) {
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
     </script>
 </body>
 
