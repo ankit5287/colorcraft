@@ -286,7 +286,13 @@
                 <h2 class="contact__heading animate-text">Contact Us</h2>
                 <p class="contact__subtext">Leave your details and our team will call you back within 24 hours.</p>
 
-                {% if not success %}
+                {% if success %}
+                <div class="success-message show" id="success-message">
+                    <strong>Thank you! Your request has been received.</strong>
+                    <br>We'll be in touch within 24 hours to discuss your project.
+                </div>
+                {% endif %}
+
                 <form method="post" action="{% url 'contact' %}" class="contact__form form" id="contact-form">
                     {% csrf_token %}
                     <div class="form-group">
@@ -336,14 +342,6 @@
                     <p class="privacy-note">We only use your contact information to discuss your painting project. Your
                         privacy is important to us.</p>
                 </form>
-                {% endif %}
-
-                {% if success %}
-                <div class="success-message show" id="success-message">
-                    <strong>Thanks — our team will call you!</strong>
-                    <br>We'll be in touch within 24 hours to discuss your project.
-                </div>
-                {% endif %}
             </div>
         </section>
 
