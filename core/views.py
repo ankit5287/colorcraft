@@ -52,3 +52,6 @@ def contact_view(request):
         success = True
 
     return render(request, 'core/index.html', {'success': success})
+
+def sitemap_view(request):
+    return render(request, 'sitemap.xml', content_type='application/xml')
