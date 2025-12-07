@@ -1,5 +1,4 @@
-
-        /* CSS Variables - Easy customization */
+/* CSS Variables - Easy customization */
 :root {
     /* Light Theme Colors */
     --bg: #fafafa;
@@ -442,24 +441,25 @@ p {
 }
 
 /* Text animation on scroll */
+/* Apple Liquid Glass Text Effect */
 .animate-text {
-    background: linear-gradient(135deg, var(--text-primary), var(--accent));
-    background-size: 200% 200%;
+    background: linear-gradient(135deg,
+            var(--text-primary) 30%,
+            var(--accent) 50%,
+            var(--text-primary) 70%);
+    background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: textShine 3s ease-in-out infinite;
+    animation: liquidShine 3s linear infinite;
+    position: relative;
+    /* Optional: Subtle drop shell for depth */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
-@keyframes textShine {
-
-    0%,
-    100% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
+@keyframes liquidShine {
+    to {
+        background-position: 200% center;
     }
 }
 
