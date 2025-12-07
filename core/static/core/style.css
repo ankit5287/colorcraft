@@ -1,16 +1,22 @@
 /* CSS Variables - Easy customization */
+/* CSS Variables - Dark Mode Enforced */
 :root {
-    /* Light Theme Colors */
-    --bg: #fafafa;
-    --surface: #ffffff;
-    --surface-elevated: #ffffff;
-    --muted: #6b7280;
+    /* Dark Theme Colors (Default) */
+    --bg: #0f172a;
+    --surface: #1e293b;
+    --surface-elevated: #334155;
+    --muted: #94a3b8;
     --accent: #2563eb;
     --accent-2: #10b981;
-    --text-primary: #1f2937;
-    --text-secondary: #4b5563;
-    --border: #e5e7eb;
-    --border-hover: #d1d5db;
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --border: #334155;
+    --border-hover: #475569;
+
+    /* Shadows - Dark Mode Intensity */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
 
     /* Fonts */
     /* Fonts - iOS System Stack */
@@ -43,24 +49,6 @@
     /* Layout */
     --container-max: 1200px;
     --border-radius: 0.5rem;
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
-
-/* Dark Theme */
-[data-theme="dark"] {
-    --bg: #0f172a;
-    --surface: #1e293b;
-    --surface-elevated: #334155;
-    --muted: #94a3b8;
-    --text-primary: #f8fafc;
-    --text-secondary: #cbd5e1;
-    --border: #334155;
-    --border-hover: #475569;
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
 }
 
 /* Reset and Base Styles */
