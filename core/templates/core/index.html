@@ -407,8 +407,16 @@
         const themeToggle = document.getElementById('theme-toggle');
         const body = document.body;
 
-        // Check for saved theme preference or default to light
-        const currentTheme = localStorage.getItem('theme') || 'light';
+        // Check for saved theme preference or system preference
+        function getPreferredTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                return savedTheme;
+            }
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+
+        const currentTheme = getPreferredTheme();
         body.setAttribute('data-theme', currentTheme);
 
         themeToggle.addEventListener('click', () => {
