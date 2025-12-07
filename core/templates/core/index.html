@@ -57,10 +57,22 @@
                         <a href="#process" class="nav__link">Process</a>
                         <a href="#faq" class="nav__link">FAQ</a>
                         <a href="#contact" class="nav__link">Contact</a>
+                        <a href="tel:9104648709" class="nav-call-btn" id="nav-call-btn">Call Now</a>
                     </nav>
                     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
                 </div>
             </div>
+            <script>
+                // Show Call Button only between 7 AM and 8 PM
+                (function () {
+                    const now = new Date();
+                    const hours = now.getHours();
+                    const callBtn = document.getElementById('nav-call-btn');
+                    if (hours >= 7 && hours < 20) { // 7:00 to 19:59 (8 PM)
+                        callBtn.style.display = 'inline-flex';
+                    }
+                })();
+            </script>
     </header>
 
     <main>

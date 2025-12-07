@@ -101,6 +101,26 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.nav-call-btn {
+    display: none;
+    /* Hidden by default, toggled by JS */
+    background: #2563eb;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 99px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-left: 1rem;
+}
+
+.nav-call-btn:hover {
+    transform: scale(1.05);
+    background: #1d4ed8;
+}
+
 /* Parallax Background Effect */
 .parallax-bg {
     position: fixed;
