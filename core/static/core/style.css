@@ -1279,14 +1279,11 @@ p {
 
 /* Footer */
 .footer {
-    background-color: var(--text-primary);
-    color: white;
+    background-color: var(--surface);
+    color: var(--text-primary);
     text-align: center;
     padding: var(--space-8) 0;
-}
-
-[data-theme="dark"] .footer {
-    background-color: #020617;
+    border-top: 1px solid var(--border);
 }
 
 .footer__content {
