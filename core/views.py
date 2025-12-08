@@ -13,15 +13,15 @@ def contact_view(request):
         project_type = request.POST.get('project-type')      # Note the hyphen from HTML name
         message = request.POST.get('message')
 
-        # contact = Contact(
-        #     name=name,
-        #     phone=phone,
-        #     email=email,
-        #     preferred_time=preferred_time,
-        #     project_type=project_type,
-        #     message=message
-        # )
-        # contact.save()
+        contact = Contact(
+            name=name,
+            phone=phone,
+            email=email,
+            preferred_time=preferred_time,
+            project_type=project_type,
+            message=message
+        )
+        contact.save()
 
         # Send Email Notification
         subject = f"New Contact Request from {name}"
@@ -52,6 +52,20 @@ def contact_view(request):
         success = True
 
     return render(request, 'core/index.html', {'success': success})
+
+from .models import Feedback
+
+def feedback_view(request):
+    feedback_success = False
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        description = request.POST.get('description')
+        
+        if name and description:
+            Feedback.objects.create(name=name, description=description)
+            feedback_success = True
+            
+    return render(request, 'core/index.html', {'feedback_success': feedback_success})
 
 def sitemap_view(request):
     return render(request, 'sitemap.xml', content_type='application/xml')

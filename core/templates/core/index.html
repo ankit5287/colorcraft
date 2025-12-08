@@ -388,7 +388,27 @@
                     helps us improve and helps other customers make informed decisions.</p>
 
                 <div class="feedback__container">
-                    <form class="feedback__form" id="feedback-form">
+                    {% if feedback_success %}
+                    <style>
+                        #feedback-form {
+                            display: none;
+                        }
+
+                        #feedback-success {
+                            display: block;
+                            animation: slideUp 500ms ease;
+                        }
+                    </style>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function () {
+                            const feedbackSection = document.getElementById('feedback');
+                            if (feedbackSection) feedbackSection.scrollIntoView({ behavior: 'smooth' });
+                        });
+                    </script>
+                    {% endif %}
+
+                    <form method="post" action="{% url 'feedback' %}" class="feedback__form" id="feedback-form">
+                        {% csrf_token %}
                         <h3 class="feedback__form-title">Tell Us About Your Experience</h3>
 
                         <div class="feedback__form-grid">
