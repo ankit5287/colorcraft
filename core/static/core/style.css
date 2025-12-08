@@ -275,6 +275,7 @@ p {
 .btn--primary:hover,
 .btn--primary:focus {
     background-color: #1d4ed8;
+    color: white;
     transform: scale(1.02);
     box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.4);
 }
