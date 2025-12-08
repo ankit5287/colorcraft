@@ -79,16 +79,21 @@ WSGI_APPLICATION = 'colorcraft_project.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+import dj_database_url
+
+# Database
+# https://docs.djangoproject.com/en/5.2/ref/settings/#databases
+
 # Database
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.config(
+        default='sqlite:///' + str(BASE_DIR / 'db.sqlite3'),
+        conn_max_age=600
+    )
 }
 
-# Use cookie-based sessions (No Database Required)
-SESSION_ENGINE = 'django.contrib.sessions.backends.signed_cookies'
+# Session Engine (Revert to default DB-backed sessions)
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 
 
 # Password validation
